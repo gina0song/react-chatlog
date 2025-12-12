@@ -6,6 +6,10 @@ import './ChatLog.css';
 const ChatLog = ({ entries }) => {
   return (
     <ul className="chat-log">
+      {/* Map over entries and render ChatEntry for each */}
+      {/* Loops through each item;
+      transforms each item using the function provided;
+      returns a new array with the transformed items */}
       {entries.map((entry) => (
         <ChatEntry
           key={entry.id}
