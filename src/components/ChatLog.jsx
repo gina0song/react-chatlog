@@ -10,12 +10,14 @@ const ChatLog = ({ entries }) => {
       {/* Loops through each item;
       transforms each item using the function provided;
       returns a new array with the transformed items */}
-      {entries.map((entry) => (
+      {entries.map((entry,onToggleLike) => (
         <ChatEntry
           key={entry.id}
           sender={entry.sender}
           body={entry.body}
           timeStamp={entry.timeStamp}
+          liked={entry.liked}
+          onToggleLike={onToggleLike}
         />
       ))}
     </ul>
