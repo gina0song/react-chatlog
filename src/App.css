@@ -13,6 +13,10 @@
   align-items: center;
 }
 
+header section p {
+  color: black;
+}
+
 #App main {
   padding-left: 2em;
   padding-right: 2em;
